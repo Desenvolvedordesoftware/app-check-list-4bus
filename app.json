@@ -1,15 +1,13 @@
 {
   "expo": {
-    "name": "app-check-list-4bus",
+    "name": "Check-List 4Bus",
     "slug": "app-check-list-4bus",
-    "version": "1.0.0",
+    "version": "1.0.10",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#02B3D4"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -19,8 +17,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#02B3D4"
       }
     },
     "web": {
