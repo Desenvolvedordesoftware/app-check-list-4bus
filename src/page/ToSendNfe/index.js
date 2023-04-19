@@ -6,28 +6,28 @@ import {
     TouchableOpacity
 } from 'react-native';
 
-import * as Animatable from'react-native-animatable';
+import * as Animatable from 'react-native-animatable';
 
 import { useNavigation } from '@react-navigation/native';
 
 export default function ToSendNfe() {
     const navigation = useNavigation();
- return (
-   <View style={styles.container} >
-    <Text style={styles.text} >Envio de documentos</Text>
-    <Text style={styles.text} >Em desenvolvimento!</Text>
-    
-    <TouchableOpacity
-     onPress={() => navigation.navigate('Home')}
-     style={styles.button} >
-        <Animatable.Text
-         duration={2000}
-         animation="fadeInLeft" 
-         style={styles.buttonText}>Voltar</Animatable.Text>
-    </TouchableOpacity>
- 
-   </View>
-  );
+    return (
+        <View style={styles.container} >
+            <Text style={styles.text} >Envio de documentos</Text>
+            <Text style={styles.text} >Em desenvolvimento!</Text>
+
+            <TouchableOpacity
+                onPress={() => navigation.navigate('Home')}
+                style={styles.button} >
+                <Animatable.Text
+                    duration={2000}
+                    animation="fadeInLeft"
+                    style={styles.buttonText}>Voltar</Animatable.Text>
+            </TouchableOpacity>
+
+        </View>
+    );
 }
 
 const styles = StyleSheet.create({
@@ -40,11 +40,11 @@ const styles = StyleSheet.create({
     text: {
         fontSize: 30,
         color: '#fff',
-        textAlign: 'center',    
+        textAlign: 'center',
         margin: 10,
         fontWeight: 'bold',
         justifyContent: 'center',
-    },button: {
+    }, button: {
         position: 'absolute',
         backgroundColor: '#fff',
         borderRadius: 50,
