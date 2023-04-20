@@ -1,10 +1,17 @@
 
 import React from 'react';
-import { StyleSheet, Text, View, FlatList } from 'react-native';
+import { 
+    StyleSheet, 
+    Text,  
+    FlatList,
+    TouchableOpacity,
+    View 
+} from 'react-native';
 
+import { Feather } from 'react-native-vector-icons';
 import NewCheckList from '../../components/NewCheckList';
 
-const list = [
+const listCheck = [
     { id: 1, items: 1, description: 'CNH Condutor', c: false, nc: false, na: false, observation_measurements: "TESTE" },
     { id: 2, items: 2, description: 'CRLV veículo', c: false, nc: false, na: true, observation_measurements: "" },
     { id: 3, items: 3, description: 'Licenças ANTT', c: true, nc: false, na: false, observation_measurements: "TESTE1" },
@@ -43,11 +50,15 @@ export default function CheckList() {
 
             <View style={styles.contentTitle}>
                 <Text style={styles.title}>Check-List</Text>
+                <TouchableOpacity activeOpacity={0.9} style={styles.buttonUser} onPress={() => alert('Clicou')}>
+                    <Feather name="send" size={27} color={'#03b3d4'} />
+                <Text style={styles.titleEnd}>Enviar</Text>
+                </TouchableOpacity>
             </View>
 
             <FlatList
-                style={styles.list}
-                data={list}
+                style={styles.listCheck}
+                data={listCheck}
                 keyExtractor={(item) => String(item.id)}
                 showsVerticalScrollIndicator={false}
                 renderItem={({ item }) => <NewCheckList data={item} />}
@@ -65,14 +76,32 @@ const styles = StyleSheet.create({
     contentTitle: {
         alignItems: 'center',
         justifyContent: 'center',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
     },
     title: {
         color: '#fff',
         fontSize: 22,
         margin: 14,
     },
-    list: {
+    titleEnd: {
+        color: '#03b3d4',
+        fontSize: 22,
+        margin: 14,
+    },
+    listCheck: {
         marginStart: 14,
         marginEnd: 14,
+    },
+    buttonUser: { 
+        alignItems: 'center',
+        justifyContent: 'center',
+        flexDirection: 'row',
+        display: 'flex',
+        backgroundColor: '#fff',
+        borderRadius: 50,
+        width: 150,
+        height: 50,
+        margin: 10,
     }
 });

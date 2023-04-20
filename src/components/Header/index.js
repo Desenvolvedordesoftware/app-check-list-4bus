@@ -10,7 +10,7 @@ import * as Animatable from 'react-native-animatable';
 
 import { Feather } from 'react-native-vector-icons';
 
-const statusBarHeight = StatusBar.currentHeight ? StatusBar.currentHeight + 22 : 64;
+const statusBarHeight = StatusBar.currentHeight ? StatusBar.currentHeight + 1 : 64;
 
 export default function Header({ name }) {
     return (
@@ -32,15 +32,12 @@ export default function Header({ name }) {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#008080',
+        backgroundColor: '#17a',
         paddingTop: statusBarHeight,
         flexDirection: 'row',
         paddingStart: 16,
         paddingEnd: 16,
         paddingBottom: 30,
-
-        borderTopLeftRadius: 25,
-        borderTopRightRadius: 25,
 
         borderBottomLeftRadius: 25,
         borderBottomRightRadius: 25,

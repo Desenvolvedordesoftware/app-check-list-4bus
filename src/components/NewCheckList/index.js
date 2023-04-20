@@ -20,13 +20,13 @@ export default function NewCheckList({ data }) {
     });
 
     return (
-        <TouchableOpacity style={styles.container} >
+        <View style={styles.container} >
             <Text style={styles.description}>{data.items} ) {data.description}</Text>
 
             <View style={styles.content}>
 
                 {showValue ? (
-                    <View style={data === 0 ? styles.contentCheckBoxNone : styles.contentCheckBox} >
+                    <View style={data.id === 0 ? styles.contentCheckBoxNone : styles.contentCheckBox} >
 
                         <CheckBox
                             isChecked={isChecked.WithinTheStandard}
@@ -87,7 +87,7 @@ export default function NewCheckList({ data }) {
                 )}
 
             </View>
-        </TouchableOpacity>
+        </View>
     );
 }
 
