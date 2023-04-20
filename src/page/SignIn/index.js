@@ -7,59 +7,59 @@ import {
     TouchableOpacity
 } from 'react-native';
 
-import * as Animatable from'react-native-animatable';
+import * as Animatable from 'react-native-animatable';
 
 import { useNavigation } from '@react-navigation/native';
 
 export default function SignIn() {
     const navigation = useNavigation();
 
- return (
-   <View style={styles.container} >
-     
-     <Animatable.View animation="bounceInLeft" duration={2000} style={styles.containerHeader} >
-        <Text style={styles.message}>Bem-vindo</Text>
-     </Animatable.View>
+    return (
+        <View style={styles.container} >
 
-     <View style={styles.containerLogo}>
-        <Animatable.Image
-          animation="bounceInLeft" duration={2000}
-          source={require('../../../assets/Logo.png')}
-          style={{ width: '100%' }}
-          resizeMode="contain"
-        />
-    </View>
+            <Animatable.View animation="bounceInLeft" duration={2000} style={styles.containerHeader} >
+                <Text style={styles.message}>Bem-vindo</Text>
+            </Animatable.View>
 
-     <Animatable.View animation="bounceInUp" duration={2000} style={styles.containerFrom} >
-        <Text style={styles.title}>CPF</Text>
-        <TextInput
-         placeholder='Digite seu CPF' 
-         style={styles.input} />
+            <View style={styles.containerLogo}>
+                <Animatable.Image
+                    animation="bounceInLeft" duration={2000}
+                    source={require('../../../assets/Logo.png')}
+                    style={{ width: '100%' }}
+                    resizeMode="contain"
+                />
+            </View>
 
-        <Text style={styles.title}>Senha</Text>
-        <TextInput
-         placeholder='Digite sua senha'  
-         style={styles.input} /> 
+            <Animatable.View animation="bounceInUp" duration={2000} style={styles.containerFrom} >
+                <Text style={styles.title}>CPF</Text>
+                <TextInput
+                    placeholder='Digite seu CPF'
+                    style={styles.input} />
 
-    <TouchableOpacity
-     onPress={() => navigation.navigate('Home')}
-     style={styles.button} >
-        <Animatable.Text
-         duration={2000}
-         animation="fadeInLeft" 
-         style={styles.buttonText}>Entrar</Animatable.Text>
-    </TouchableOpacity>
+                <Text style={styles.title}>Senha</Text>
+                <TextInput
+                    placeholder='Digite sua senha'
+                    style={styles.input} />
 
-     </Animatable.View>
+                <TouchableOpacity
+                    onPress={() => navigation.navigate('Home')}
+                    style={styles.button} >
+                    <Animatable.Text
+                        duration={2000}
+                        animation="fadeInLeft"
+                        style={styles.buttonText}>Entrar</Animatable.Text>
+                </TouchableOpacity>
 
-   </View>
-  );
+            </Animatable.View>
+
+        </View>
+    );
 }
 
 const styles = StyleSheet.create({
     container: {
-      flex: 1,
-      backgroundColor: '#02B3D4',
+        flex: 1,
+        backgroundColor: '#02B3D4',
     },
     containerHeader: {
         marginTop: '14%',

@@ -1,5 +1,5 @@
 
-import React from'react';
+import React from 'react';
 import { StyleSheet, Text, View, FlatList } from 'react-native';
 
 import Header from '../../components/Header';
@@ -10,73 +10,73 @@ const list = [
   {
     id: 1,
     status: 'Realizado',
-    date:'08/04/2023',
+    date: '08/04/2023',
     type: 1 // 0 = Pendente - 1 = Realizado
   },
   {
     id: 2,
     status: 'Realizado',
-    date:'08/04/2023',
+    date: '08/04/2023',
     type: 1 // 0 = Pendente - 1 = Realizado
   },
   {
     id: 3,
     status: 'Pendente',
-    date:'08/04/2023',
+    date: '08/04/2023',
     type: 0 // 0 = Pendente - 1 = Realizado
   },
   {
     id: 4,
     status: 'Realizado',
-    date:'08/04/2023',
+    date: '08/04/2023',
     type: 1 // 0 = Pendente - 1 = Realizado
   },
   {
     id: 5,
     status: 'Realizado',
-    date:'08/04/2023',
+    date: '08/04/2023',
     type: 1 // 0 = Pendente - 1 = Realizado
   },
   {
     id: 6,
     status: 'Pendente',
-    date:'08/04/2023',
+    date: '08/04/2023',
     type: 0 // 0 = Pendente - 1 = Realizado
   },
   {
     id: 7,
     status: 'Realizado',
-    date:'08/04/2023',
+    date: '08/04/2023',
     type: 1 // 0 = Pendente - 1 = Realizado
   },
   {
     id: 8,
     status: 'Realizado',
-    date:'08/04/2023',
+    date: '08/04/2023',
     type: 1 // 0 = Pendente - 1 = Realizado
   },
   {
     id: 9,
     status: 'Pendente',
-    date:'08/04/2023',
+    date: '08/04/2023',
     type: 0 // 0 = Pendente - 1 = Realizado
   },
   {
     id: 10,
     status: 'Realizado',
-    date:'08/04/2023',
+    date: '08/04/2023',
     type: 1 // 0 = Pendente - 1 = Realizado
   },
   {
     id: 11,
     status: 'Realizado',
-    date:'08/04/2023',
+    date: '08/04/2023',
     type: 1 // 0 = Pendente - 1 = Realizado
   },
   {
     id: 12,
     status: 'Pendente',
-    date:'08/04/2023',
+    date: '08/04/2023',
     type: 0 // 0 = Pendente - 1 = Realizado
   },
 ]
@@ -84,9 +84,9 @@ const list = [
 export default function Home() {
   return (
     <View style={styles.container}>
-      <Header name="Olá Wilson!" /> 
+      <Header name="Olá Wilson!" />
 
-      <Menu/>
+      <Menu />
       <View style={styles.contentTitle}>
         <Text style={styles.title}>Lista de Status Check-List</Text>
       </View>
@@ -96,9 +96,9 @@ export default function Home() {
         data={list}
         keyExtractor={(item) => String(item.id)}
         showsVerticalScrollIndicator={false}
-        renderItem={ ({ item }) => <Movements data={item} /> }
+        renderItem={({ item }) => <Movements data={item} />}
       />
-     
+
     </View>
   );
 }
@@ -108,16 +108,16 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#03b3d4',
   },
-  contentTitle:{
+  contentTitle: {
     alignItems: 'center',
     justifyContent: 'center',
   },
-  title:{
+  title: {
     color: '#fff',
     fontSize: 22,
     margin: 14,
   },
-  list:{
+  list: {
     marginStart: 14,
     marginEnd: 14,
   }

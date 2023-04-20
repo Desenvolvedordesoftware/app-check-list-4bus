@@ -13,40 +13,40 @@ const Stack = createNativeStackNavigator();
 export default function Routes() {
     return (
         <Stack.Navigator>
-            <Stack.Screen 
-            name="Welcome"
-            component={Welcome}
-            options={{ headerShown: false }}
+            <Stack.Screen
+                name="Welcome"
+                component={Welcome}
+                options={{ headerShown: false }}
             />
             <Stack.Screen
-            name="SignIn"
-            component={SignIn}
-            options={{ headerShown: false }}
+                name="SignIn"
+                component={SignIn}
+                options={{ headerShown: false }}
             />
             <Stack.Screen
-            name="Home"
-            component={Home}
-            options={{ headerShown: false }}
+                name="Home"
+                component={Home}
+                options={{ headerShown: false }}
             />
             <Stack.Screen
-            name="CheckList"
-            component={CheckList}
-            options={{ headerShown: false }}
+                name="CheckList"
+                component={CheckList}
+                options={{ headerShown: false }}
             />
             <Stack.Screen
-            name="Config"
-            component={Config}
-            options={{ headerShown: false }}
+                name="Config"
+                component={Config}
+                options={{ headerShown: false }}
             />
             <Stack.Screen
-            name="Profile"
-            component={Profile}
-            options={{ headerShown: false }}
+                name="Profile"
+                component={Profile}
+                options={{ headerShown: false }}
             />
             <Stack.Screen
-            name="ToSendNfe"
-            component={ToSendNfe}
-            options={{ headerShown: false }}
+                name="ToSendNfe"
+                component={ToSendNfe}
+                options={{ headerShown: false }}
             />
         </Stack.Navigator>
     );
