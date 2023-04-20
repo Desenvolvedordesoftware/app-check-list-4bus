@@ -1,6 +1,6 @@
 import React from 'react';
-import { Text, StyleSheet, View } from 'react-native';
-
+import { Text, View } from 'react-native';
+import { styles } from './styles';
 import { useNavigation } from '@react-navigation/native';
 import LottieView from 'lottie-react-native';
 
@@ -22,18 +22,3 @@ export default function Splash() {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  animationContainer: {
-    flex:1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#02b3d4',
-  },
-  text: {
-    fontSize: 20,
-    paddingTop: 20,
-    fontFamily: 'Roboto',
-    color: '#fff',
-  },
-});
