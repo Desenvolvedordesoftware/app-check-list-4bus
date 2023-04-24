@@ -18,10 +18,16 @@
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#02B3D4"
-      }
+      },
+      "package": "com.wilsonbrito.appchecklist4bus"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "9b674064-491b-41d2-b205-c79ba1795a79"
+      }
     }
   }
 }

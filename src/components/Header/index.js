@@ -27,7 +27,12 @@ export default function Header({ name }) {
                     style={styles.username}> {name} </Animatable.Text>
 
                 <TouchableOpacity activeOpacity={0.9} style={styles.buttonUser} onPress={() => alert('Perfil')}>
-                    <Feather name="user" size={27} color={'#02B3D4'} />
+                <Animatable.Image
+                    animation="bounceInLeft" duration={2000}
+                    source={require('../../../assets/Logo.png')}
+                    style={{ width: '100%' }}
+                    resizeMode="contain"
+                />
                 </TouchableOpacity>
             </View>
         </View>
