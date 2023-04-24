@@ -14,6 +14,11 @@ export const styles = StyleSheet.create({
       paddingTop: 22,
       paddingBottom: 22,
       zIndex: 99,
+
+      shadowColor: '#000',
+      shadowOpacity: 0.9,
+      shadowRadius: 8,
+      elevation: 5,
     },
     actionButtom: {
       alignItems: 'center',
@@ -26,6 +31,11 @@ export const styles = StyleSheet.create({
       borderRadius: 30,
       justifyContent: 'center',
       alignItems: 'center',
+
+      shadowColor: '#000',
+      shadowOpacity: 0.9,
+      shadowRadius: 8,
+      elevation: 5,
     },
     labelButtom: {
       marginTop: 4,

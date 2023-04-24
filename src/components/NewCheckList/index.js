@@ -14,11 +14,13 @@ import * as Animatable from 'react-native-animatable';
 
 export default function NewCheckList({ data }) {
     const [showValue, setShowValue] = useState(true);
+
     const [isChecked, setIsChecked] = useState({
         WithinTheStandard: false,
         Nonconforming: false,
         NotApplicable: false
     });
+
 
     return (
         <View style={styles.container} >

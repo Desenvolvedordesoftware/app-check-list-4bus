@@ -33,22 +33,11 @@ export const styles = StyleSheet.create({
         height: 10,
         backgroundColor: '#02b3d4',
         borderRadius: 8,
+        
     },
     accomplishedButton: {
         alignItems: 'center',
         marginRight: 10,
-    },
-    pendingButtom: {
-        display: 'none',
-        alignItems: 'center',
-        marginRight: 10,
-    },
-    areaButtom: {
-        height: 50,
-        width: 50,
-        borderRadius: 30,
-        justifyContent: 'center',
-        alignItems: 'center',
     },
     contentCheckBoxNone: {
         display: 'none',
@@ -57,10 +46,10 @@ export const styles = StyleSheet.create({
         marginBottom: 10,
     },
     contentCheckBox: {
-        style: PropTypes.style,
         gap: 20,
         marginTop: 10,
         marginBottom: 10,
+
     },
     input: {
         borderBottomWidth: 1,
@@ -77,7 +66,12 @@ export const styles = StyleSheet.create({
         width: '100%',
         alignSelf: 'center',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+
+        shadowColor: '#000',
+      shadowOpacity: 0.9,
+      shadowRadius: 8,
+      elevation: 5,
     },
     buttonText: {
         fontSize: 20,

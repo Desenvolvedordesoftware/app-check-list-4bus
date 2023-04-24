@@ -24,8 +24,9 @@ export const styles = StyleSheet.create({
     listCheck: {
         marginStart: 14,
         marginEnd: 14,
+
     },
-    buttonUser: { 
+    button: { 
         alignItems: 'center',
         justifyContent: 'center',
         flexDirection: 'row',
@@ -35,5 +36,10 @@ export const styles = StyleSheet.create({
         width: 150,
         height: 50,
         margin: 10,
+
+        shadowColor: '#000',
+        shadowOpacity: 0.9,
+        shadowRadius: 8,
+        elevation: 5,
     }
 });

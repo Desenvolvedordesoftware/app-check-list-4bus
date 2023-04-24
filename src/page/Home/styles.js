@@ -17,5 +17,6 @@ export const styles = StyleSheet.create({
     list: {
       marginStart: 14,
       marginEnd: 14,
+
     }
   });

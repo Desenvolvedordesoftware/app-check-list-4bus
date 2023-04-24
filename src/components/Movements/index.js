@@ -7,10 +7,13 @@ import {
 
 import { styles } from './styles';
 
-import { AntDesign } from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native';
+
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 export default function Movements({ data }) {
-    const [showValue, setShowValue] = useState(false)
+    const navigation = useNavigation();
+    const [showValue, setShowValue] = useState(true)
 
     return (
         <TouchableOpacity style={styles.container} onPress={() => setShowValue(!showValue)} >
@@ -22,9 +25,10 @@ export default function Movements({ data }) {
                 </Text>
 
                 {showValue ? (
-                    <TouchableOpacity style={data.type === 1 ? styles.pendingButtom : styles.accomplishedButton} >
+                    <TouchableOpacity style={data.type === 1 ? styles.pendingButtom : styles.accomplishedButton}  >
                         <View style={styles.areaButtom}>
-                            <AntDesign name="edit" size={30} color='#02b3d4' />
+                            <MaterialCommunityIcons onPress={() => navigation.navigate('CheckList')}
+                            name="book-clock-outline" size={30} color='#e74c3c'/>
                         </View>
                     </TouchableOpacity>
                 ) : (

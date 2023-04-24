@@ -6,6 +6,8 @@ import {
     TouchableOpacity
 } from 'react-native';
 
+
+
 import { styles } from './styles';
 
 import * as Animatable from 'react-native-animatable';
@@ -24,8 +26,8 @@ export default function Header({ name }) {
 
                     style={styles.username}> {name} </Animatable.Text>
 
-                <TouchableOpacity activeOpacity={0.9} style={styles.buttonUser} onPress={() => alert('Clicou')}>
-                    <Feather name="user" size={27} color={"#fff"} />
+                <TouchableOpacity activeOpacity={0.9} style={styles.buttonUser} onPress={() => alert('Perfil')}>
+                    <Feather name="user" size={27} color={'#02B3D4'} />
                 </TouchableOpacity>
             </View>
         </View>
