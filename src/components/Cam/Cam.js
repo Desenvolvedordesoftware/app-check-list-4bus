@@ -17,6 +17,9 @@ import { MaterialIcons } from '@expo/vector-icons';
 
 import { useNavigation } from '@react-navigation/native';
 
+import * as Permissions from 'expo-permissions';
+import * as MediaLibrary from 'expo-media-library';
+
 export default function Cam() {
   const camRef = useRef(null);
   const [type, setType] = useState(Camera.Constants.Type.back);
@@ -30,6 +33,12 @@ export default function Cam() {
       const { status } = await Camera.requestCameraPermissionsAsync();
       setHasPermission(status === 'granted');
     })();
+    
+    (async () => {
+      const { status } = await Permissions.askAsync(Permissions.CAMERA_ROLL_PERMISSIONS);
+      setHasPermission(status === 'granted');
+    })();
+
   }, []);
 
   if (hasPermission === null) {
@@ -54,6 +63,15 @@ export default function Cam() {
       setCapturePhoto(data.uri);
       setModalVisible(true);
     }
+  }
+
+  async function savePicture() {
+    const asset = await MediaLibrary.createAssetAsync(capturePhoto)
+    .then(() => {
+      alert('Imagem salva com sucesso')
+      navigation.navigate('ToSendNfe')
+    })
+    .catch(error => alert(error.message))
   }
 
  return (
@@ -90,7 +108,7 @@ export default function Cam() {
             <Text style={styles.text}>Nova</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.bottonModal} onPress={() => navigation.navigate('ToSendNfe')} >
+        <TouchableOpacity style={styles.bottonModal} onPress={savePicture} >
             <MaterialIcons name='save-alt' size={30} color='#fff'/>
             <Text style={styles.text}>Salvar</Text>
         </TouchableOpacity>
