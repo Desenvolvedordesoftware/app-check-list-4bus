@@ -2,7 +2,7 @@ import React from 'react';
 import {
     View,
     Text,
-    TouchableOpacity
+    TouchableOpacity,
 } from 'react-native';
 import { styles } from './styles';
 import * as Animatable from 'react-native-animatable';
@@ -17,12 +17,12 @@ export default function ToSendNfe() {
             <Text style={styles.text} >Em desenvolvimento!</Text>
 
             <TouchableOpacity
-                onPress={() => navigation.navigate('Home')}
+                onPress={() => navigation.navigate('Cam')}
                 style={styles.button} >
                 <Animatable.Text
                     duration={2000}
                     animation="fadeInLeft"
-                    style={styles.buttonText}>Voltar</Animatable.Text>
+                    style={styles.buttonText}>Camera</Animatable.Text>
             </TouchableOpacity>
 
         </View>

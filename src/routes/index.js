@@ -7,6 +7,7 @@ import CheckList from "../page/CheckList";
 import Config from "../page/Config";
 import Profile from "../page/Profile";
 import ToSendNfe from "../page/ToSendNfe";
+import Cam from "../components/Cam/Cam";
 
 const Stack = createNativeStackNavigator();
 
@@ -46,6 +47,11 @@ export default function Routes() {
             <Stack.Screen
                 name="ToSendNfe"
                 component={ToSendNfe}
+                options={{ headerShown: false }}
+            />
+            <Stack.Screen
+                name="Cam"
+                component={Cam}
                 options={{ headerShown: false }}
             />
         </Stack.Navigator>
