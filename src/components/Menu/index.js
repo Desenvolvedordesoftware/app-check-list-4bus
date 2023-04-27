@@ -33,16 +33,16 @@ export default function Menu() {
         <View style={styles.areaButtom} >
           <FontAwesome5 name="file-invoice-dollar" size={40} color='#fff' />
         </View>
-        <Text style={styles.labelButtom} >Enviar NF-e</Text>
+        <Text style={styles.labelButtom} >Enviar Doc</Text>
       </TouchableOpacity>
 
       <TouchableOpacity
         onPress={() => navigation.navigate('Profile')}
         style={styles.actionButtom} >
         <View style={styles.areaButtom} >
-          <AntDesign name="profile" size={40} color='#fff' />
+          <MaterialIcons name="more-time" size={40} color='#fff' />
         </View>
-        <Text style={styles.labelButtom} >Perfil</Text>
+        <Text style={styles.labelButtom} >Banco Horas</Text>
       </TouchableOpacity>
 
       <TouchableOpacity

@@ -11,7 +11,7 @@ import { list } from './dados'
 export default function Home() {
   return (
     <View style={styles.container}>
-      <Header name="Olá Wilson!" />
+      <Header name="Olá Marcos!" />
 
       <Menu />
       <View style={styles.contentTitle}>
