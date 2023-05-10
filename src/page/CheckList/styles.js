@@ -13,12 +13,12 @@ export const styles = StyleSheet.create({
     },
     title: {
         color: '#fff',
-        fontSize: 22,
+        fontSize: 20,
         margin: 14,
     },
     titleEnd: {
         color: '#03b3d4',
-        fontSize: 22,
+        fontSize: 18,
         margin: 14,
     },
     listCheck: {

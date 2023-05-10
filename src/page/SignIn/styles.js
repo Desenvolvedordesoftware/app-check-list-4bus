@@ -26,6 +26,8 @@ export const styles = StyleSheet.create({
     title: {
         fontSize: 20,
         marginTop: 28,
+        
+        color: '#02B3D4',
     },
     input: {
         borderBottomWidth: 1,
@@ -43,7 +45,12 @@ export const styles = StyleSheet.create({
         alignSelf: 'center',
         bottom: '-15%',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+
+        shadowColor: '#000',
+        shadowOpacity: 0.9,
+        shadowRadius: 8,
+        elevation: 10,
     },
     buttonText: {
         fontSize: 20,

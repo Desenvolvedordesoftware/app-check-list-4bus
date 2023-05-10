@@ -4,6 +4,8 @@ export const styles = StyleSheet.create({
     container: {
         flex: 1,
         marginBottom: 10,
+        marginLeft: 10,
+        marginRight: 10,
         backgroundColor: '#ecf0f1',
         padding: 8,
         borderRadius: 10,
@@ -18,19 +20,21 @@ export const styles = StyleSheet.create({
         justifyContent: 'space-between',
         marginTop: 2,
         marginBottom: 8,
+        marginLeft: 10,
+        marginRight: 10,
     },
     date: {
-        fontSize: 22,
+        fontSize: 16,
         color: '#02b3d4',
         fontWeight: 'bold',
     },
     status: {
-        fontSize: 18,
+        fontSize: 15,
         color: '#2ecc71',
         fontWeight: 'bold',
     },
     expenses: {
-        fontSize: 18,
+        fontSize: 15,
         color: '#e74c3c',
         fontWeight: 'bold',
     },

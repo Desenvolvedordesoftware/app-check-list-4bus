@@ -22,7 +22,7 @@ export default function Menu() {
         onPress={() => navigation.navigate('CheckList')}
         style={styles.actionButtom} >
         <View style={styles.areaButtom} >
-          <MaterialIcons name="post-add" size={40} color='#fff' />
+          <MaterialIcons name="post-add" size={30} color='#02b3d4' />
         </View>
         <Text style={styles.labelButtom} >Check-List</Text>
       </TouchableOpacity>
@@ -31,25 +31,25 @@ export default function Menu() {
         onPress={() => navigation.navigate('ToSendNfe')}
         style={styles.actionButtom} >
         <View style={styles.areaButtom} >
-          <FontAwesome5 name="file-invoice-dollar" size={40} color='#fff' />
+          <FontAwesome5 name="file-invoice-dollar" size={30} color='#02b3d4' />
         </View>
-        <Text style={styles.labelButtom} >Enviar NF-e</Text>
+        <Text style={styles.labelButtom} >Envio Doc</Text>
       </TouchableOpacity>
 
       <TouchableOpacity
         onPress={() => navigation.navigate('Profile')}
         style={styles.actionButtom} >
         <View style={styles.areaButtom} >
-          <AntDesign name="profile" size={40} color='#fff' />
+          <AntDesign name="profile" size={30} color='#02b3d4' />
         </View>
-        <Text style={styles.labelButtom} >Perfil</Text>
+        <Text style={styles.labelButtom} >Reg. ponto</Text>
       </TouchableOpacity>
 
       <TouchableOpacity
         onPress={() => navigation.navigate('Config')}
         style={styles.actionButtom} >
         <View style={styles.areaButtom} >
-          <AntDesign name="setting" size={40} color='#fff' />
+          <AntDesign name="setting" size={30} color='#02b3d4' />
         </View>
         <Text style={styles.labelButtom} >Config.</Text>
       </TouchableOpacity>

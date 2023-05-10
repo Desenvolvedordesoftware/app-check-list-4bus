@@ -11,7 +11,7 @@ export const styles = StyleSheet.create({
     },
     title: {
       color: '#fff',
-      fontSize: 22,
+      fontSize: 18,
       margin: 14,
     },
     list: {

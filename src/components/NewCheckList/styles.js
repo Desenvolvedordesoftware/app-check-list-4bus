@@ -13,27 +13,9 @@ export const styles = StyleSheet.create({
         marginBottom: 8,
     },
     description: {
-        fontSize: 18,
+        fontSize: 16,
         color: '#000',
         fontWeight: 'bold',
-    },
-    status: {
-        fontSize: 18,
-        color: '#2ecc71',
-        fontWeight: 'bold',
-    },
-    expenses: {
-        fontSize: 18,
-        color: '#e74c3c',
-        fontWeight: 'bold',
-    },
-    skeleton: {
-        marginTop: 6,
-        width: 80,
-        height: 10,
-        backgroundColor: '#02b3d4',
-        borderRadius: 8,
-        
     },
     accomplishedButton: {
         alignItems: 'center',
@@ -63,7 +45,7 @@ export const styles = StyleSheet.create({
         backgroundColor: '#02B3D4',
         borderRadius: 50,
         paddingVertical: 15,
-        width: '100%',
+        width: '50%',
         alignSelf: 'center',
         alignItems: 'center',
         justifyContent: 'center',
@@ -74,8 +56,7 @@ export const styles = StyleSheet.create({
       elevation: 5,
     },
     buttonText: {
-        fontSize: 20,
-        fontWeight: 'bold',
+        fontSize: 18,
         color: '#fff'
     },
 })

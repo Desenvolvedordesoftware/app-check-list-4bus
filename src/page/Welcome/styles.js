@@ -7,9 +7,19 @@ export const styles = StyleSheet.create({
         backgroundColor: '#02B3D4'
     },
     containerLogo: {
-        flex: 2,
+        flex: 1,
+        borderRadius: 50,
+        width: '70%',
+        height: '70%',
+        alignSelf: 'center',
+        alignItems: 'center',
         justifyContent: 'center',
-        alignItems: 'center'
+        
+    },
+    Logo: {
+        width: '50%',
+        height: '50%',
+        
     },
     button: {
         position: 'absolute',
@@ -20,7 +30,12 @@ export const styles = StyleSheet.create({
         alignSelf: 'center',
         bottom: '15%',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+
+        shadowColor: '#000',
+      shadowOpacity: 0.9,
+      shadowRadius: 8,
+      elevation: 10,
     },
     buttonText: {
         fontSize: 20,

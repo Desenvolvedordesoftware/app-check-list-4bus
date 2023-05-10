@@ -11,9 +11,9 @@ import { list } from './dados'
 export default function Home() {
   return (
     <View style={styles.container}>
-      <Header name="Olá Wilson!" />
+      <Header name="Olá CAROLINE!" />
 
-      <Menu />
+      
       <View style={styles.contentTitle}>
         <Text style={styles.title}>Lista de Status Check-List</Text>
       </View>
@@ -25,7 +25,7 @@ export default function Home() {
         showsVerticalScrollIndicator={false}
         renderItem={({ item }) => <Movements data={item} />}
       />
-
+     <Menu />
     </View>
   );
 }

@@ -35,7 +35,7 @@ export default function NewCheckList({ data }) {
                             isChecked={isChecked.WithinTheStandard}
                             onClick={() => setIsChecked({ ...isChecked, WithinTheStandard: !isChecked.WithinTheStandard })}
                             rightText='Dentro do padrão'
-                            rightTextStyle={{ fontSize: 19, color: isChecked.WithinTheStandard ? 'green' : 'black', fontWeight: 'bold' }}
+                            rightTextStyle={{ fontSize: 16, color: isChecked.WithinTheStandard ? 'green' : 'black' }}
                             checkedCheckBoxColor='green'
                             uncheckedCheckBoxColor='black'
                         />
@@ -44,7 +44,7 @@ export default function NewCheckList({ data }) {
                             isChecked={isChecked.Nonconforming}
                             onClick={() => setIsChecked({ ...isChecked, Nonconforming: !isChecked.Nonconforming })}
                             rightText='Não conforme'
-                            rightTextStyle={{ fontSize: 19, color: isChecked.Nonconforming ? 'green' : 'black', fontWeight: 'bold' }}
+                            rightTextStyle={{ fontSize: 16, color: isChecked.Nonconforming ? 'green' : 'black' }}
                             checkedCheckBoxColor='green'
                             uncheckedCheckBoxColor='black'
                         />
@@ -53,7 +53,7 @@ export default function NewCheckList({ data }) {
                             isChecked={isChecked.NotApplicable}
                             onClick={() => setIsChecked({ ...isChecked, NotApplicable: !isChecked.NotApplicable })}
                             rightText='Não se aplica'
-                            rightTextStyle={{ fontSize: 19, color: isChecked.NotApplicable ? 'green' : 'black', fontWeight: 'bold' }}
+                            rightTextStyle={{ fontSize: 16, color: isChecked.NotApplicable ? 'green' : 'black' }}
                             checkedCheckBoxColor='green'
                             uncheckedCheckBoxColor='black'
                         />
@@ -61,8 +61,6 @@ export default function NewCheckList({ data }) {
                         <TextInput
                             placeholder='Observação / Medidas'
                             style={styles.input} />
-
-
 
                         <TouchableOpacity
                             onPress={() => setShowValue(!showValue)}
@@ -74,7 +72,6 @@ export default function NewCheckList({ data }) {
                         </TouchableOpacity>
 
                     </View>
-
 
                 ) : (
                     <View>
