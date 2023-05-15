@@ -2,11 +2,11 @@
 
 import { StyleSheet, StatusBar } from 'react-native';
 
-const statusBarHeight = StatusBar.currentHeight ? StatusBar.currentHeight + -25 : 64;
+const statusBarHeight = StatusBar.currentHeight ? StatusBar.currentHeight + 5 : 64;
 
 export const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#fafafa',
+        backgroundColor: '#02B3D4',
         paddingTop: statusBarHeight,
         flexDirection: 'row',
         paddingStart: 16,
@@ -18,6 +18,10 @@ export const styles = StyleSheet.create({
 
         borderBottomLeftRadius: 25,
         borderBottomRightRadius: 25,
+
+        
+        borderColor: '#fff',
+        borderWidth: 1,
 
         shadowColor: '#000',
       shadowOpacity: 0.9,
@@ -32,13 +36,13 @@ export const styles = StyleSheet.create({
     },
     username: {
         fontSize: 18,
-        color: '#02B3D4',
+        color: '#fafafa',
         fontWeight: 'bold',
     },
     buttonUser: {
         width: 60,
         height: 60,
-        backgroundColor: '#02B3D4',
+        backgroundColor: '#fafafa',
         justifyContent: 'center',
         alignItems: 'center',
         borderRadius: 60,
@@ -68,7 +72,7 @@ export const styles = StyleSheet.create({
     },
     modalProfile:{
       fontSize: 20,
-      color: '#02B3D4',
+      color: '#fafafa',
       fontWeight: 'bold',
     },
     modalText:{

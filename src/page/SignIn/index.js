@@ -26,7 +26,7 @@ export default function SignIn() {
                 <Animatable.Image
                     animation="bounceInLeft" duration={2000}
                     source={require('../../../assets/Logo.png')}
-                    style={{ width: '100%' }}
+                    style={styles.Logo}
                     resizeMode="contain"
                 />
             </View>

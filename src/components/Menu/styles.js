@@ -42,7 +42,7 @@ export const styles = StyleSheet.create({
     },
     labelButtom: {
       marginTop: 4,
-      width: 70,
+      width: 80,
       textAlign: 'center',
       fontSize: 16,
       color: '#fff',

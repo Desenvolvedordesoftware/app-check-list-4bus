@@ -12,12 +12,11 @@ export const styles = StyleSheet.create({
     },
     message: {
         fontSize: 28,
-        fontWeight: 'bold',
         color: '#fff'
     },
     containerFrom: {
         backgroundColor: '#fff',
-        flex: 1,
+        flex: 2,
         borderTopLeftRadius: 25,
         borderTopRightRadius: 25,
         paddingStart: '5%',
@@ -54,13 +53,22 @@ export const styles = StyleSheet.create({
     },
     buttonText: {
         fontSize: 20,
-        fontWeight: 'bold',
         color: '#fff'
     },
     containerLogo: {
         flex: 1,
+        width: '100%',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        alignSelf: 'center',
+        borderRadius: 60,
+
+    },
+    Logo: {
+        width: '100%',
+        height: '50%',
+        borderRadius: 10
+
     },
 
 });

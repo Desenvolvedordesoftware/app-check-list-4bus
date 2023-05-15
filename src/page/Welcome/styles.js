@@ -1,4 +1,4 @@
-import { StyleSheet } from'react-native';
+import { StyleSheet } from 'react-native';
 
 
 export const styles = StyleSheet.create({
@@ -8,20 +8,27 @@ export const styles = StyleSheet.create({
     },
     containerLogo: {
         flex: 1,
-        borderRadius: 50,
-        width: '70%',
-        height: '70%',
-        alignSelf: 'center',
-        alignItems: 'center',
+        width: '100%',
+        backgroundColor: '#02B3D4',
         justifyContent: 'center',
-        
+        alignItems: 'center',
+        alignSelf: 'center',
+        borderRadius: 60,
+
+        shadowColor: '#000',
+        shadowOpacity: 0.9,
+        shadowRadius: 8,
+        elevation: 10,
+
     },
     Logo: {
         width: '50%',
-        height: '50%',
-        
+        height: '20%',
+        borderRadius: 60
+
     },
     button: {
+        flex: 1,
         position: 'absolute',
         backgroundColor: '#fff',
         borderRadius: 50,
@@ -33,9 +40,9 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',
 
         shadowColor: '#000',
-      shadowOpacity: 0.9,
-      shadowRadius: 8,
-      elevation: 10,
+        shadowOpacity: 0.9,
+        shadowRadius: 8,
+        elevation: 10,
     },
     buttonText: {
         fontSize: 20,

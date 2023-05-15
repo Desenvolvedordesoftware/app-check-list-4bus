@@ -10,6 +10,7 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',
         flexDirection: 'row',
         justifyContent: 'space-between',
+        marginTop: 40,
     },
     title: {
         color: '#fff',

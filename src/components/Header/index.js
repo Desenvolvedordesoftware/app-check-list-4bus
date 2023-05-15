@@ -42,7 +42,6 @@ export default function Header({ name }) {
             transparent={true}
             visible={modalOpen}
             onRequestClose={() => {
-                Alert.alert('Modal has been closed.');
                 setModalOpen(!modalOpen);
             }}>
                 <View style={styles.centeredView}>
